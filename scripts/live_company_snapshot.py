@@ -1,3 +1,4 @@
+"""Print a company's latest standardized SEC facts."""
 from __future__ import annotations
 
 import argparse

@@ -1,3 +1,4 @@
+"""Hand-written thesis plan used by scripts/demo.py; company theses use thesis_lab."""
 from __future__ import annotations
 
 from dataclasses import dataclass, field

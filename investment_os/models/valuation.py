@@ -1,3 +1,4 @@
+"""DCF, reverse DCF and sensitivity primitives."""
 from __future__ import annotations
 
 from dataclasses import dataclass

@@ -1,3 +1,4 @@
+"""Run the core mechanics on illustrative inputs."""
 from __future__ import annotations
 
 import sys
@@ -11,11 +12,23 @@ import numpy as np
 import pandas as pd
 
 from investment_os.core.evidence import EvidenceItem, EvidenceKind, EvidenceLedger
-from investment_os.models.valuation import DCFInputs, dcf_valuation, reverse_dcf_implied_growth
-from investment_os.private.lbo import LBOInputs, run_lbo, solve_max_debt_for_dscr, solve_max_purchase_price
+from investment_os.models.valuation import (
+    DCFInputs,
+    dcf_valuation,
+    reverse_dcf_implied_growth,
+)
+from investment_os.private.lbo import (
+    LBOInputs,
+    run_lbo,
+    solve_max_debt_for_dscr,
+    solve_max_purchase_price,
+)
 from investment_os.research.memo import ICMemoBuilder, MemoInputs
 from investment_os.research.thesis import build_manual_thesis_plan
-from investment_os.signals.analytics import lead_lag_table, out_of_sample_signal_backtest
+from investment_os.signals.analytics import (
+    lead_lag_table,
+    out_of_sample_signal_backtest,
+)
 
 
 def main() -> None:

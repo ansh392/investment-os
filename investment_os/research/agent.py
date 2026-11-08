@@ -1,3 +1,4 @@
+"""Optional Claude layer for claim rewording and memo critique, within citation guardrails."""
 from __future__ import annotations
 
 import json

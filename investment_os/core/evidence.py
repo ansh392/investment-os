@@ -1,3 +1,4 @@
+"""Evidence schema and the ledger that enforces sourcing rules at insertion."""
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass

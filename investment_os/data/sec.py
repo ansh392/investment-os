@@ -1,3 +1,4 @@
+"""SEC EDGAR client: ticker lookup, Company Facts, submissions and filing links."""
 from __future__ import annotations
 
 import time

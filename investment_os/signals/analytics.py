@@ -1,3 +1,4 @@
+"""Basic lead-lag, event-study and out-of-sample helpers; the full protocol is altdata."""
 from __future__ import annotations
 
 from dataclasses import dataclass

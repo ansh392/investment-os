@@ -1,3 +1,4 @@
+"""Six-page Streamlit workspace over saved research bundles."""
 from __future__ import annotations
 
 import os
@@ -22,13 +23,37 @@ from investment_os.models.valuation import (
     dcf_valuation,
     reverse_dcf_implied_growth,
 )
-from investment_os.models.workspace import OperatingAssumptions, ValuationNotApplicable, value_bridge_table
-from investment_os.pipeline import DEFAULT_OUTPUT_DIR, ResearchBundle, available_bundles, build_bundle, load_bundle
-from investment_os.private.lbo import LBOInputs, run_lbo, solve_max_debt_for_dscr, solve_max_purchase_price
-from investment_os.research.ic_memo import build_memo, memo_to_html, recommendation_for, validate_citations
+from investment_os.models.workspace import (
+    OperatingAssumptions,
+    ValuationNotApplicable,
+    value_bridge_table,
+)
+from investment_os.pipeline import (
+    DEFAULT_OUTPUT_DIR,
+    ResearchBundle,
+    available_bundles,
+    build_bundle,
+    load_bundle,
+)
+from investment_os.private.lbo import (
+    LBOInputs,
+    run_lbo,
+    solve_max_debt_for_dscr,
+    solve_max_purchase_price,
+)
+from investment_os.research.ic_memo import (
+    build_memo,
+    memo_to_html,
+    recommendation_for,
+    validate_citations,
+)
 from investment_os.research.thesis_lab import contradictory_findings, run_thesis_lab
 from investment_os.research.workflow import ValuationPackage, run_valuation
-from investment_os.signals.altdata import abnormal_event_study, load_dataset, run_altdata_lab
+from investment_os.signals.altdata import (
+    abnormal_event_study,
+    load_dataset,
+    run_altdata_lab,
+)
 
 OUTPUTS = Path(os.getenv("INVESTMENT_OS_OUTPUTS", DEFAULT_OUTPUT_DIR))
 SAMPLE = ROOT / "sample_data"

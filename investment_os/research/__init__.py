@@ -1,3 +1,4 @@
+"""Thesis and memo primitives; the company workflow lives in the submodules."""
 from .memo import ICMemoBuilder, MemoInputs
 from .thesis import ThesisClaim, ThesisPlan, build_manual_thesis_plan
 

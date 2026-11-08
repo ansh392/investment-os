@@ -8,6 +8,9 @@ import pandas as pd
 
 from investment_os.core.evidence import EvidenceItem, EvidenceKind, EvidenceLedger
 from investment_os.models.workspace import (
+    DEFAULT_TERMINAL_GROWTH,
+    DEFAULT_WACC,
+    HIGH_TERMINAL_SHARE,
     BaseFinancials,
     OperatingAssumptions,
     ScenarioResult,
@@ -20,9 +23,6 @@ from investment_os.models.workspace import (
     probability_weighted_price,
     sensitivity,
     value_scenario,
-    DEFAULT_TERMINAL_GROWTH,
-    DEFAULT_WACC,
-    HIGH_TERMINAL_SHARE,
 )
 from investment_os.pipeline import ResearchBundle
 

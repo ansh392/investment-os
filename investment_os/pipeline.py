@@ -10,7 +10,12 @@ from typing import Any
 
 import pandas as pd
 
-from investment_os.core.evidence import EvidenceItem, EvidenceKind, EvidenceLedger, now_iso
+from investment_os.core.evidence import (
+    EvidenceItem,
+    EvidenceKind,
+    EvidenceLedger,
+    now_iso,
+)
 from investment_os.data.market import PRICE_SOURCE_URL, price_frame
 from investment_os.data.normalize import (
     NormalizedFinancials,
@@ -18,7 +23,12 @@ from investment_os.data.normalize import (
     normalize_company_facts,
     trailing_twelve_months,
 )
-from investment_os.data.sec import SEC_COMPANYFACTS_URL, SECClient, filing_url, filings_frame
+from investment_os.data.sec import (
+    SEC_COMPANYFACTS_URL,
+    SECClient,
+    filing_url,
+    filings_frame,
+)
 
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parents[1] / "outputs"
 EVIDENCE_ANNUAL_YEARS = 6

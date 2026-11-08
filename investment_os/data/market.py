@@ -1,3 +1,4 @@
+"""Daily price download via yfinance, an unlicensed convenience source."""
 from __future__ import annotations
 
 import pandas as pd

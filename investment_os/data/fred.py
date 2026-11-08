@@ -1,3 +1,4 @@
+"""FRED macro-series adapter. Optional, and not used by the main workflow."""
 from __future__ import annotations
 
 import pandas as pd

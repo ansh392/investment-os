@@ -1,3 +1,4 @@
+"""Hand-assembled memo builder used by scripts/demo.py; company memos use ic_memo."""
 from __future__ import annotations
 
 from dataclasses import dataclass

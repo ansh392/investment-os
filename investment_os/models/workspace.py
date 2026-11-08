@@ -12,7 +12,12 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from investment_os.models.valuation import DCFInputs, dcf_sensitivity_table, dcf_valuation, reverse_dcf_implied_growth
+from investment_os.models.valuation import (
+    DCFInputs,
+    dcf_sensitivity_table,
+    dcf_valuation,
+    reverse_dcf_implied_growth,
+)
 
 DEFAULT_YEARS = 5
 DEFAULT_WACC = 0.09

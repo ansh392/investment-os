@@ -2,13 +2,13 @@
 
 ## Result
 
-All eight priority features in the brief are implemented and run on live SEC and market data. The test suite grew from 12 to **105 tests, all passing**, on Python 3.12.
+All eight planned v1.0 features are implemented and run on live SEC and market data. The test suite grew from 12 to **105 tests, all passing**, on Python 3.12.
 
 Live end-to-end runs: VST, NVDA, WMT (each with real peers) and JPM. Every generated memo passed citation validation. A sampled evidence link to Vistra's FY2025 10-K on sec.gov returned HTTP 200.
 
 ## What was implemented
 
-| Brief item | Delivered |
+| Planned item | Delivered |
 |---|---|
 | 1. Research pipeline | `scripts/research_company.py`: ticker → CIK → filings → history → prices → market cap/EV → bundle in `outputs/<TICKER>/`, with `--offline` and `--peers` |
 | 2. Filing / evidence layer | SEC submissions, links to each filing's primary document, full evidence schema, enforcement at insertion |
@@ -51,9 +51,9 @@ Known-answer check on the Alternative Data Lab at zero publication lag:
 
 ## Not verified
 
-- The **Claude layer was not called live**, because no API key was configured. Its guardrails are unit-tested only.
+- The **Claude layer** has had one live smoke test, of claim rewording. The memo critique was not called live, and the guardrails are otherwise unit-tested.
 - The **FRED adapter** is unchanged and was not exercised.
-- **Python 3.11** was not run. A linter syntax check targets it, and it caught and fixed one 3.12-only construct.
+- **Python 3.12** is the only version tested and the only version the package declares.
 - In the dashboard, the **CSV upload path** and **live scenario-table edits** were not exercised. All six pages were reviewed in a browser with default inputs.
 
 ## Remaining limitations
