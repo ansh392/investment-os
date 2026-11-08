@@ -1,11 +1,11 @@
-# Investment OS
+# Investment OS — Research, Valuation & Underwriting
 
 [![CI](https://github.com/ansh392/investment-os/actions/workflows/ci.yml/badge.svg)](https://github.com/ansh392/investment-os/actions/workflows/ci.yml)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![Tests](https://img.shields.io/badge/tests-105%20automated-2ea44f)](tests)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-Institutional-style equity research and private-markets underwriting platform built to make investment hypotheses testable, auditable, and falsifiable.
+Research, valuation and underwriting platform for testable, auditable investment analysis.
 
 **Fundamental Research · Reverse DCF · Thesis Testing · Alternative-Data Testing · LBO / Credit Underwriting · Evidence-Linked IC Memos**
 
