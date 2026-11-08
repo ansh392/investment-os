@@ -1,5 +1,6 @@
 # Investment OS
 
+[![CI](https://github.com/ansh392/investment-os/actions/workflows/ci.yml/badge.svg)](https://github.com/ansh392/investment-os/actions/workflows/ci.yml)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![Tests](https://img.shields.io/badge/tests-105%20automated-2ea44f)](tests)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
