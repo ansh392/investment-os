@@ -1,0 +1,59 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+credentials.*
+.streamlit/secrets.toml
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test, lint and type-check caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# IDE and OS files
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generated research bundles: these contain Yahoo-sourced price data
+outputs/*
+!outputs/.gitkeep
+
+# Local market-price series: only synthetic data is distributed
+sample_data/*.csv
+!sample_data/synthetic_*.csv
+
+# Private build brief and internal release notes
+CLAUDE_CODE_PROMPT.md
+GITHUB_RELEASE_CHECKLIST.md
